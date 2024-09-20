@@ -1,0 +1,1703 @@
+
+
+*{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  font-style: normal;
+}
+.destacados{
+    display: none;
+}
+header{
+    display: block;
+    justify-content: center;
+    background-color: #8C3E4C;
+    align-items: center;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    
+}
+.logo{
+    height: 0px;
+    background-color: aqua;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+nav{
+    display: block;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+nav ul li{
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 20px;
+
+}
+
+.c1 {
+    
+    border-bottom: none; /* Sin borde por defecto */
+}
+
+.c1.active {
+    border-bottom: 2px solid #000; /* Borde permanente para el div activo */
+}
+.c1:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+.banner img{
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.text-overlay {
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%, -200%);
+    color: white;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+.icon-overlay{
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1020%, 400%);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+}
+.icon-overlay2{
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1200%, 400%);
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.icon-overlay3{
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1200%, 400%);
+    color: white;
+    text-align: center;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+
+
+}
+
+.icons a:hover{
+    cursor: pointer;
+    color: #8C3E4C;
+    transition: 1s;
+}
+
+.icon-overlay:hover{
+    cursor: pointer;
+    color: #8C3E4C;
+    transition: 1s;
+}
+.icon-overlay2:hover{
+    cursor: pointer;
+    color: #8C3E4C;
+    transition: 1s;
+}
+.icon-overlay3:hover{
+    cursor: pointer;
+    color: #8C3E4C;
+    transition: 1s;
+}
+.swiper-container{
+    display: none;
+}
+
+main{
+    height: auto;
+    background-color: #222326;
+}
+
+/* Animación de fade-in con movimiento vertical (sin afectar horizontal) */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-900px); /* Solo mueve en el eje Y */
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(); /* Llega a la posición original */
+    }
+}
+
+.text-overlay, .icon-overlay, .icon-overlay2, .icon-overlay3 {
+    opacity: 0; /* Inicialmente invisibles */
+    animation: fadeInUp 1s ease forwards; /* Aplica la animación */
+    position: absolute; /* Mantén el posicionamiento absoluto */
+}
+
+/* Para que los elementos animen en diferentes momentos */
+.text-overlay {
+    animation-delay: 0.2s;
+    transform: translate(-110%, -200%); /* Mantiene la posición original */
+    transition: 1s;
+}
+
+.icon-overlay {
+    animation-delay: 0.4s;
+    transform: translate(1020%, 400%); /* Mantiene la posición original */
+    transition: 1s;
+}
+
+.icon-overlay2 {
+    animation-delay: 0.6s;
+    transform: translate(1200%, 400%); /* Mantiene la posición original */
+    transition: 1s;
+}
+
+.icon-overlay3 {
+    animation-delay: 0.8s;
+    transform: translate(1200%, 400%); /* Mantiene la posición original */
+    transition: 1s;
+}
+
+footer{
+    background-color:#8C3E4C;
+    height: 220px;
+    margin-bottom: 0px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+.icono-footer{
+    height: 200px;
+
+
+}
+.icono-footer img{
+    height: 100%;
+    
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    gap: 20px;
+    max-width: 300px;
+}
+.redes h1{
+    font-size: 16px;
+
+}
+
+.redes-iconos{
+    display: flex;
+    cursor: pointer;
+    gap: 40px;
+}
+.location{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    max-width: 300px;
+ 
+
+}
+.location h1{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.location h3{
+    font-size: 12px;
+}
+
+.map{
+    height: 150px;
+    margin: 10px;
+}
+.map img{
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.encontranos{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    color: white;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1700px) {
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .text-overlay {
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -180%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+    }
+
+    .icon-overlay{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(930%, 400%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+    }
+    .icon-overlay2{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(1100%, 400%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+    }
+    
+    .icon-overlay3{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(1100%, 400%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+    
+    }
+
+
+
+
+
+}
+
+
+
+@media (max-width: 1400px) {
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .text-overlay {
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -280%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .icon-overlay{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(530%, 100%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+    }
+    .icon-overlay2{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(720%, 100%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+    }
+    
+    .icon-overlay3{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(780%, 100%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 50px;
+    
+    }
+
+
+
+
+
+}
+
+@media (max-width: 1150px) {
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .text-overlay {
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -400%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+    }
+
+    .icon-overlay{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(530%, 100%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .icon-overlay2{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(720%, 100%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    .icon-overlay3{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(780%, 100%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+    
+    }
+    footer{
+        background-color:#8C3E4C;
+        height: 220px;
+        margin-bottom: 0px;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+    }
+    .icono-footer{
+        height: 200px;
+    
+    
+    }
+    .icono-footer img{
+        height: 100%;
+        
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        gap: 20px;
+        max-width: 300px;
+    }
+    .redes h1{
+        font-size: 12px;
+    
+    }
+    
+    .redes-iconos{
+        display: flex;
+        cursor: pointer;
+        gap: 40px;
+    }
+    .location{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        max-width: 300px;
+     
+    
+    }
+    .location h1{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+    }
+    
+    .location h3{
+        font-size: 12px;
+    }
+    
+    .map{
+        height: 120px;
+        margin: 10px;
+    }
+    .map img{
+        height: 100%;
+        border-radius: 10px;
+    
+    }
+    
+    .encontranos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        color: white;
+        
+        
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+
+    header{
+        display: block;
+        justify-content: center;
+        background-color: #8C3E4C;
+        align-items: center;
+        height: 60px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        
+    }
+    .logo{
+      display: none;
+    }
+    .logo img{
+       
+    }
+
+    .c1 {
+        
+        height: 59px;
+        border-bottom: none; /* Sin borde por defecto */
+    }
+    
+    .c1.active {
+        border-bottom: 2px solid #000; /* Borde permanente para el div activo */
+    }
+    .c1:hover{
+        cursor: pointer;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    nav{
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        
+    }
+    
+    nav ul li{
+        display: block;
+        align-items: center;
+        text-decoration: none;
+        font-size: 9px;
+        margin: 20px;
+    
+    }
+
+    .text-overlay {
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-90%, -400%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 8px;
+    }
+
+    .icon-overlay{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(530%, -700%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .icon-overlay2{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(720%, -700%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    
+    .icon-overlay3{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(780%, -700%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+    
+    }
+
+    .banner{
+        height: auto;
+        width: 100%;
+        
+
+    }
+
+    .swiper-container{
+        display: block;
+        width: 100%;
+        height: auto; /* O ajusta según tu necesidad */
+        overflow: hidden;
+        height: 100%; /* Asegura que ocupe el espacio completo del slide */
+    
+    }
+
+    .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        margin: 0 auto;
+        width: 280px;
+        height: auto;
+
+    }
+
+    .destacados{display:block ;
+    
+    
+    }
+
+.btn{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+   .btn button{
+    all: unset; /* Elimina todos los estilos por defecto */
+    margin-bottom: 10px;
+    width: 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #8C3E4C;
+    color: white;
+    font-size:15px;
+    box-shadow: 4px 4px 10px 0 rgba(27, 27, 27, 0.5); /* Sombra suave */
+
+}
+
+.btn button:hover{
+    background-color: #D93D59;
+}
+    .title{
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        border-bottom: 2px solid #8C3E4C;
+    }
+    .title h1{
+        border-radius: 2px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        margin: 10px;
+        
+        
+    }
+
+    footer{
+        background-color:#8C3E4C;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+    }
+    .icono-footer{
+        height: 80px;
+    
+    
+    }
+    .icono-footer img{
+        height: 100%;
+        max-width: 100px;
+        
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        gap: 20px;
+        max-width: 100px;
+    }
+    .redes h1{
+        font-size: 8px;
+        text-align: center;
+    
+    }
+    
+    .redes-iconos{
+        display: flex;
+        cursor: pointer;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .location{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        max-width: 300px;
+     
+    
+    }
+    .location h1{
+        font-size: 8px;
+        text-align: center;
+        margin-top: 13px;
+        color: white;
+    }
+    
+    .location h3{
+        font-size: 8px;
+    }
+    
+    .map{
+        display: none;
+    }
+    .map img{
+        display: none;
+    
+    }
+    
+    .encontranos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        color: white;
+        font-size: 8px;
+        max-width: 100px;
+        
+        
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    header{
+        display: block;
+        justify-content: center;
+        background-color: #8C3E4C;
+        align-items: center;
+        height: 60px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        
+    }
+    .logo{
+      display: none;
+    }
+    .logo img{
+       
+    }
+
+    .c1 {
+        
+        height: 59px;
+        border-bottom: none; /* Sin borde por defecto */
+    }
+    
+    .c1.active {
+        border-bottom: 2px solid #000; /* Borde permanente para el div activo */
+    }
+    .c1:hover{
+        cursor: pointer;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    nav{
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        
+    }
+    
+    nav ul li{
+        display: block;
+        align-items: center;
+        text-decoration: none;
+        font-size: 9px;
+        margin: 20px;
+    
+    }
+
+    .text-overlay {
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -600%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 5px;
+    }
+
+    .icon-overlay{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(530%, -600%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .icon-overlay2{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(720%, -600%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    .icon-overlay3{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(780%, -600%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    
+    }
+
+    .banner{
+        height: auto;
+        width: 100%;
+        
+
+    }
+
+    .swiper-container{
+        display: block;
+        width: 100%;
+        height: auto; /* O ajusta según tu necesidad */
+        overflow: hidden;
+        height: 100%; /* Asegura que ocupe el espacio completo del slide */
+    
+    }
+
+    .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        margin: 0 auto;
+        width: 280px;
+        height: auto;
+
+    }
+
+    .destacados{display:block ;
+    
+    
+    }
+
+.btn{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+   .btn button{
+    all: unset; /* Elimina todos los estilos por defecto */
+    margin-bottom: 10px;
+    width: 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #8C3E4C;
+    color: white;
+    font-size:15px;
+    box-shadow: 4px 4px 10px 0 rgba(27, 27, 27, 0.5); /* Sombra suave */
+
+}
+
+.btn button:hover{
+    background-color: #D93D59;
+}
+    .title{
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        border-bottom: 2px solid #8C3E4C;
+    }
+    .title h1{
+        border-radius: 2px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        margin: 10px;
+        
+        
+    }
+
+    footer{
+        background-color:#8C3E4C;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+    }
+    .icono-footer{
+        height: 80px;
+    
+    
+    }
+    .icono-footer img{
+        height: 100%;
+        max-width: 100px;
+        
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        gap: 20px;
+        max-width: 100px;
+    }
+    .redes h1{
+        font-size: 8px;
+        text-align: center;
+    
+    }
+    
+    .redes-iconos{
+        display: flex;
+        cursor: pointer;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .location{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        max-width: 300px;
+     
+    
+    }
+    .location h1{
+        font-size: 8px;
+        text-align: center;
+        margin-top: 13px;
+        color: white;
+    }
+    
+    .location h3{
+        font-size: 8px;
+    }
+    
+    .map{
+        display: none;
+    }
+    .map img{
+        display: none;
+    
+    }
+    
+    .encontranos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        color: white;
+        font-size: 8px;
+        max-width: 100px;
+        
+        
+    }
+}
+@media (max-width: 350px) {
+
+    header{
+        display: block;
+        justify-content: center;
+        background-color: #8C3E4C;
+        align-items: center;
+        height: 60px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        
+    }
+    .logo{
+      display: none;
+    }
+    .logo img{
+       
+    }
+
+    .c1 {
+        
+        height: 59px;
+        border-bottom: none; /* Sin borde por defecto */
+    }
+    
+    .c1.active {
+        border-bottom: 2px solid #000; /* Borde permanente para el div activo */
+    }
+    .c1:hover{
+        cursor: pointer;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    nav{
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        
+    }
+    
+    nav ul li{
+        display: block;
+        align-items: center;
+        text-decoration: none;
+        font-size: 9px;
+        margin: 20px;
+    
+    }
+
+    .text-overlay {
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -600%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 5px;
+    }
+
+    .icon-overlay{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(530%, -1000%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .icon-overlay2{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(720%, -1000%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .icon-overlay3{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(780%, -1000%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    
+    }
+
+    .banner{
+        height: auto;
+        width: 100%;
+        
+
+    }
+
+    .swiper-container{
+        display: block;
+        width: 100%;
+        height: auto; /* O ajusta según tu necesidad */
+        overflow: hidden;
+        height: 100%; /* Asegura que ocupe el espacio completo del slide */
+    
+    }
+
+    .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        margin: 0 auto;
+        width: 280px;
+        height: auto;
+
+    }
+
+    .destacados{display:block ;
+    
+    
+    }
+
+.btn{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+   .btn button{
+    all: unset; /* Elimina todos los estilos por defecto */
+    margin-bottom: 10px;
+    width: 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #8C3E4C;
+    color: white;
+    font-size:15px;
+    box-shadow: 4px 4px 10px 0 rgba(27, 27, 27, 0.5); /* Sombra suave */
+
+}
+
+.btn button:hover{
+    background-color: #D93D59;
+}
+    .title{
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        border-bottom: 2px solid #8C3E4C;
+    }
+    .title h1{
+        border-radius: 2px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        margin: 10px;
+        
+        
+    }
+
+    footer{
+        background-color:#8C3E4C;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+    }
+    .icono-footer{
+        height: 80px;
+    
+    
+    }
+    .icono-footer img{
+        height: 100%;
+        max-width: 100px;
+        
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        gap: 20px;
+        max-width: 100px;
+    }
+    .redes h1{
+        font-size: 8px;
+        text-align: center;
+    
+    }
+    
+    .redes-iconos{
+        display: flex;
+        cursor: pointer;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .location{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        max-width: 300px;
+     
+    
+    }
+    .location h1{
+        font-size: 8px;
+        text-align: center;
+        margin-top: 13px;
+        color: white;
+    }
+    
+    .location h3{
+        font-size: 8px;
+    }
+    
+    .map{
+        display: none;
+    }
+    .map img{
+        display: none;
+    
+    }
+    
+    .encontranos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        color: white;
+        font-size: 8px;
+        max-width: 100px;
+        
+        
+    }
+}
+
+
+@media screen and (min-width: 390px)and (max-width: 768px) {
+    header{
+        display: block;
+        justify-content: center;
+        background-color: #8C3E4C;
+        align-items: center;
+        height: 60px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        
+    }
+    .logo{
+      display: none;
+    }
+    .logo img{
+       
+    }
+
+    .c1 {
+        
+        height: 59px;
+        border-bottom: none; /* Sin borde por defecto */
+    }
+    
+    .c1.active {
+        border-bottom: 2px solid #000; /* Borde permanente para el div activo */
+    }
+    .c1:hover{
+        cursor: pointer;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    nav{
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        
+    }
+    
+    nav ul li{
+        display: block;
+        align-items: center;
+        text-decoration: none;
+        font-size: 9px;
+        margin: 20px;
+    
+    }
+
+    .text-overlay {
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-90%, -800%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 5px;
+    }
+
+    .icon-overlay{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(530%, -900%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .icon-overlay2{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(720%, -900%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    .icon-overlay3{
+        max-width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(780%, -900%);
+        color: white;
+        text-align: center;
+        padding: 0px;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    
+    }
+
+    .banner{
+        height: auto;
+        width: 100%;
+        
+
+    }
+
+    .swiper-container{
+        display: block;
+        width: 100%;
+        height: auto; /* O ajusta según tu necesidad */
+        overflow: hidden;
+        height: 100%; /* Asegura que ocupe el espacio completo del slide */
+    
+    }
+
+    .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        margin: 0 auto;
+        width: 280px;
+        height: auto;
+
+    }
+
+    .destacados{display:block ;
+    
+    
+    }
+
+.btn{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+   .btn button{
+    all: unset; /* Elimina todos los estilos por defecto */
+    margin-bottom: 10px;
+    width: 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #8C3E4C;
+    color: white;
+    font-size:15px;
+    box-shadow: 4px 4px 10px 0 rgba(27, 27, 27, 0.5); /* Sombra suave */
+
+}
+
+.btn button:hover{
+    background-color: #D93D59;
+}
+    .title{
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        border-bottom: 2px solid #8C3E4C;
+    }
+    .title h1{
+        border-radius: 2px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        margin: 10px;
+        
+        
+    }
+
+    footer{
+        background-color:#8C3E4C;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+    }
+    .icono-footer{
+        height: 80px;
+    
+    
+    }
+    .icono-footer img{
+        height: 100%;
+        max-width: 100px;
+        
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        gap: 20px;
+        max-width: 100px;
+    }
+    .redes h1{
+        font-size: 8px;
+        text-align: center;
+    
+    }
+    
+    .redes-iconos{
+        display: flex;
+        cursor: pointer;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .location{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        max-width: 300px;
+     
+    
+    }
+    .location h1{
+        font-size: 8px;
+        text-align: center;
+        margin-top: 13px;
+        color: white;
+    }
+    
+    .location h3{
+        font-size: 8px;
+    }
+    
+    .map{
+        display: none;
+    }
+    .map img{
+        display: none;
+    
+    }
+    
+    .encontranos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        color: white;
+        font-size: 8px;
+        max-width: 100px;
+        
+        
+    }
+
+
+};
+
+
+
+
+
