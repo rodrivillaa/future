@@ -1211,7 +1211,7 @@ footer{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-100%, -600%);
+        transform: translate(-100%, -500%);
         color: white;
         text-align: center;
         padding: 0px;
@@ -1482,7 +1482,7 @@ footer{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-90%, -800%);
+        transform: translate(-90%, -900%);
         color: white;
         text-align: center;
         padding: 0px;
