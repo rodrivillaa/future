@@ -1153,7 +1153,7 @@ footer{
         
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 350px)and (max-width: 401px) {
 
     header{
         display: block;
