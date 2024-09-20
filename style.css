@@ -163,8 +163,9 @@ a{
 }
 
 main{
+    color: white;
     height: auto;
-    background-color: #222326;
+   background-color: #222326;
 }
 
 /* Animación de fade-in con movimiento vertical (sin afectar horizontal) */
@@ -291,10 +292,114 @@ footer{
     
 }
 
+/* NOSOTROS */
 
 
+body{
+    
+    background-image: url(/img/_BKOS6959_edit_V02_highres.jpeg);
+}
+.nosotros{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 1100px;
+    font-family:  "Montserrat", sans-serif;
+}
+.nosotros h1{
+    margin-top: 23px;
+    
+}
+.titulo{
+    border-bottom: 2px solid #8C3E4C;
+    width: 900px;
+}
 
+.nosotros p{
+    margin-top: 20px;
+}
+.imagen{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 150px;
+    background-color: #8C3E4C;
+    height: 200px;
+    width: 50%;
+    border-radius: 5px;
+    gap: 200px;
+}
 
+.imagen p{
+    margin: 50px;
+}
+
+.container-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 130px;
+  
+}
+
+.general{
+    display: flex;
+    justify-content: space-between; /* Separa los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+    gap: 20px; /* Espacio entre los banners */
+    margin-top: 80px;
+    position: relative; /* Para que las transformaciones funcionen correctamente */
+}
+.banner-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    background-color: #8C3E4C;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 0; /* Para que este banner quede en la posición normal */
+    height: 200px;
+
+}
+
+.banners{
+    display: flex;
+    width: 48%;
+    background-color: #8C3E4C;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 280px; 
+    align-items: center;
+    height: 200px;
+}
+
+.icon-head{
+    font-size: 50px;
+    background-color: #222326;
+    padding: 30px;
+    border-radius: 50%;
+    margin: 50px;
+    align-items: center;
+    
+}
+
+.descripcion{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    max-width: 70%;
+}
+
+.descripcion p{
+    margin-right: 50px;
+}
 
 
 
