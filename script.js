@@ -33,6 +33,49 @@ const activateSwiper = () => {
         });
     }
 };
-
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+        loop: true, // Habilitar bucle
+        autoplay: {
+            delay: 5000, // Tiempo entre transiciones
+            
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
 window.addEventListener('resize', activateSwiper);
 activateSwiper();
+
+// Selecciona todos los botones de info
+const infoButtons = document.querySelectorAll('.info-btn');
+
+// Añade un evento de clic a cada botón
+infoButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    // Selecciona el overlay asociado al producto (el div padre)
+    const overlay = this.closest('.producto').querySelector('.overlay');
+        
+    
+    // Alterna la clase 'show' para mostrar/ocultar el overlay
+    overlay.classList.toggle('show');
+  });
+});
+
+document.addEventListener('click', function(event) {
+    const overlay = document.querySelector('.overlay.show');
+    const clickedInside = event.target.closest('.producto');
+
+    if (overlay && !clickedInside) {
+        overlay.classList.remove('show'); // Cierra el overlay
+    }
+});
+
+
+

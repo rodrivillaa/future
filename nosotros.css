@@ -19,7 +19,6 @@ header{
 }
 .logo{
     height: 0px;
-    background-color: aqua;
 }
 .logo img{
     width: 100px;
@@ -65,16 +64,16 @@ a{
 }
 
 body{
-    background-color: #222326ec; 
+    
     background-image: url(/img/descarga\ \(78\)-Photoroomss.png);
     background-repeat: no-repeat;
     background-position: -16px 350px;
     background-color: #8c3e4c63;
-
+    
 }
 
 .fondo{
-
+    
 }
 
 
@@ -86,7 +85,7 @@ body{
     margin: 0 auto;
     gap: 120px;
     max-width: 1100px;
-
+    
     margin-top: 120px;
 }
 
@@ -159,4 +158,85 @@ body{
     justify-content: center;
     text-align: center;
     max-width: 600px;
+}
+
+footer{
+    margin-top: 135px;
+    background-color:#8C3E4C;
+    height: 220px;
+    margin-bottom: 0px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+.icono-footer{
+    height: 200px;
+
+
+}
+.icono-footer img{
+    height: 100%;
+    
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    gap: 20px;
+    max-width: 300px;
+}
+.redes h1{
+    font-size: 16px;
+
+}
+
+.redes-iconos{
+    display: flex;
+    cursor: pointer;
+    gap: 40px;
+}
+.location{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    max-width: 300px;
+ 
+
+}
+.location h1{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.location h3{
+    font-size: 12px;
+}
+
+.map{
+    height: 150px;
+    margin: 10px;
+}
+.map img{
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.encontranos{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    color: white;
+    
+    
 }
