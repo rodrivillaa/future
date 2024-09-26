@@ -382,3 +382,384 @@ body{
     
     
 }
+
+
+@media (max-width: 768px){
+    body{
+        background-color: #8c3e4c63;
+        background-image: url(/img/NicePng_humo-png_4398825\ \(1\).png);
+        background-repeat: no-repeat;
+        background-position: -16px 3200px;
+    }
+    .introduccion h1{
+        font-size: 16px;
+    }
+
+    .introduccion h3{
+        font-size: 14px;
+        margin: 15px;
+    }
+    header{
+        display: block;
+        justify-content: center;
+        background-color: #8C3E4C;
+        align-items: center;
+        height: 60px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        
+    }
+    .logo{
+      display: none;
+    }
+    .logo img{
+       
+    }
+
+    .c1 {
+        
+        height: 59px;
+        border-bottom: none; /* Sin borde por defecto */
+    }
+    
+    .c1.active {
+        border-bottom: 2px solid #000; /* Borde permanente para el div activo */
+    }
+    .c1:hover{
+        cursor: pointer;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    nav{
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        
+    }
+    
+    nav ul li{
+        display: block;
+        align-items: center;
+        text-decoration: none;
+        font-size: 9px;
+        margin: 20px;
+    
+    }
+
+   
+
+    footer{
+        background-color:#8C3E4C;
+        height: 100px;
+        margin-bottom: 0px;
+    }
+    
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+    }
+    .icono-footer{
+        height: 80px;
+    
+    
+    }
+    .icono-footer img{
+        height: 100%;
+        max-width: 100px;
+        
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        gap: 20px;
+        max-width: 100px;
+    }
+    .redes h1{
+        font-size: 8px;
+        text-align: center;
+    
+    }
+    
+    .redes-iconos{
+        display: flex;
+        cursor: pointer;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .location{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        max-width: 300px;
+     
+    
+    }
+    .location h1{
+        font-size: 8px;
+        text-align: center;
+        margin-top: 13px;
+        color: white;
+    }
+    
+    .location h3{
+        font-size: 8px;
+    }
+    
+    .map{
+        display: none;
+    }
+    .map img{
+        display: none;
+    
+    }
+    
+    .encontranos{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        color: white;
+        font-size: 8px;
+        max-width: 100px;
+        
+        
+    }
+    .container-general{
+        display: grid;
+        grid-template-columns:  repeat(1,1fr); /* 3 columnas de igual tamaño */
+        margin: 100px;
+        justify-items: center;
+        align-items: center;
+        column-gap: 10px; /* Espacio horizontal entre columnas */
+        row-gap: 20px; /* Sin espacio vertical entre filas (opcional) */
+        margin: 0 auto;
+        gap: 20px;
+        
+    }
+    
+    .producto{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        position: relative;
+        gap: 0;
+        background-color:#8c3e4c;
+        border-radius: 2px;
+        text-align: center;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        color: white;
+        margin: 0 auto;
+    
+    }
+    .swiper-container{
+        display: block;
+        width: 350px;
+        
+        height: 250px;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: #0a0a0a;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 50px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #a88686;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .swiper-slide img {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 100%;
+        background-color: #131212;
+        
+        
+    }
+    
+    .swiper-button-next, .swiper-button-prev {
+        color: #ffffff !important; /* Puedes cambiar el color aquí */
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .swiper-pagination{
+        position: absolute;
+        bottom: 10px; /* Ajusta esta distancia para acercar o alejar la paginación del fondo de la imagen */
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10; /* Asegura que esté en frente de las imágenes */
+        color: #ffffff !important;
+        
+    }
+    .swiper-pagination-bullet {
+        background-color: #ffffff !important; /* Color de los bullets */
+        opacity: 0.5; /* Transparencia para los bullets inactivos */
+        border: 1px solid white;
+        
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #ffffff !important; /* Color del bullet activo */
+        opacity: 1; /* Totalmente opaco */
+    }
+    .producto{
+        background-position: -1px;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .producto img:hover{
+        transform: scale(1.2);
+        transition: 1s;
+    }
+    
+    .producto img{
+        width: 220px;
+        
+    }
+    .info-btn{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #141414;
+        cursor: pointer;
+        align-items: center;
+        width: 100px;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        color: white;
+    
+    }
+    
+    .info-btn:hover{
+        color: #f5f5f5;
+        transition: 1s;
+        background-color: #1615156e;
+        
+        
+        font-weight: 700;
+    }
+    
+    .info-btn button{
+        
+        cursor: pointer;
+        all: unset;
+        padding: 10px;
+    
+    }
+    
+    .overlay{
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.705); /* Fondo semitransparente */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0; /* Empieza oculto */
+        visibility: hidden; /* El overlay estará oculto por defecto */
+        transition: opacity 0.5s ease, visibility 0.5s ease; /* Transición suave */
+        text-align: center;
+    }
+    
+    .overlay.show {
+        opacity: 1;
+        visibility: visible; /* Muestra el overlay cuando tiene la clase 'show' */
+        transform: translateY(0); /* Se mantiene en su posición */
+    }
+    .overlay:not(.show) {
+        transform: translateY(100%); /* Mueve el overlay hacia abajo */
+    }
+    
+    
+      .introduccion{
+        display: flex;
+        flex-direction: column;
+      
+        justify-content: center;
+        margin: 0 auto;
+        gap: 20px;
+        max-width: 1100px;
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+      }
+    
+      .introduccion h1{
+        font-weight: 600px;
+      }
+    
+    
+    
+    
+    .btn-1 button{
+        cursor: pointer;
+        background-color: #be6a79;
+        
+        width: fit-content;
+        display: block;
+        margin: 20px auto;
+        padding: 10px 22px;
+        font-size: 16px;
+       
+        position: relative;
+        z-index: 1;
+        overflow: hidden; /* Asegura que el overlay no sobresalga del botón */
+        border-radius: 2px;
+        color: #000000;
+        
+        
+    }
+    
+    
+    
+    
+    .btn-1 button .overlay-2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #8C3E4C;
+        z-index: -1;
+        transition: width 1s;
+        width: 0;
+        color: white;
+        
+    }
+    
+    .btn-1 button:hover .overlay-2{
+        width: 100%;
+        
+    }
+    
+}
