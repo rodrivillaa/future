@@ -2081,4 +2081,26 @@ textarea {
 
 
 
+  /* Estilo del spinner */
+  .spinner {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 8px;
+  }
 
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Estilo del botón para que se vea con la animación */
+  .loading {
+    display: flex;
+    align-items: center;
+  }

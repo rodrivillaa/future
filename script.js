@@ -79,3 +79,35 @@ document.addEventListener('click', function(event) {
 
 
 
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   const btn = document.getElementById('button');
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_p4fdnrh';
+
+
+   const originalText = btn.innerHTML; // Guardamos el texto original del botón
+
+   // Agregamos el spinner y el texto "Enviando..."
+   btn.innerHTML = '<div class="spinner"></div> Enviando...';
+   btn.disabled = true; // Desactivamos el botón para evitar múltiples envíos
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      btn.innerHTML = originalText; // Restauramos el texto original del botón
+      btn.disabled = false; // Reactivamos el botón
+      alert('Sent!');
+      location.reload();
+    }, (err) => {
+        btn.innerHTML = originalText; // Restauramos el texto original del botón
+        btn.disabled = false; // Reactivamos el botón
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
