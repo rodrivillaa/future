@@ -430,12 +430,63 @@ footer{
 }
 
 @media (max-width:440px){
+    header{
+        display: block;
+        justify-content: center;
+        background-color: #8C3E4C;
+        align-items: center;
+        height: 60px;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        
+    }
+    .logo{
+      display: none;
+    }
+    .logo img{
+       
+    }
+
+    .c1 {
+        
+        height: 59px;
+        border-bottom: none; /* Sin borde por defecto */
+    }
+    
+    .c1.active {
+        border-bottom: 2px solid #000; /* Borde permanente para el div activo */
+    }
+    .c1:hover{
+        cursor: pointer;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
+    nav{
+        display: block;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        
+    }
+    
+    nav ul li{
+        display: block;
+        align-items: center;
+        text-decoration: none;
+        font-size: 9px;
+        margin: 20px;
+    
+    }
+
     body{
     
         background-image: url(/img/descarga\ \(78\)-Photoroomss.png);
         background-size: 300px;
         background-repeat: no-repeat;
-        background-position: -30px 745px;
+        background-position: -30px 765px;
         background-color: #8c3e4c63;
         
     }
