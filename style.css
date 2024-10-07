@@ -1492,7 +1492,8 @@ body{
         display: flex;
         justify-content: flex-end;
         gap: 10px;
-        max-width: 300px;
+        max-width: 120px;
+        text-align: center;
      
     
     }
@@ -1519,10 +1520,11 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: start;
-        gap: 20px;
+        gap: 10px;
         color: white;
         font-size: 8px;
         max-width: 100px;
+        text-align: center;
         
         
     }
@@ -1746,6 +1748,7 @@ body{
         font-size: 30px;
         gap: 20px;
         max-width: 100px;
+        text-align: center;
     }
     .redes h1{
         font-size: 8px;
@@ -1770,8 +1773,8 @@ body{
     .location h1{
         font-size: 8px;
         text-align: center;
-        margin-top: 13px;
-        color: white;
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
     }
     
     .location h3{
@@ -1790,10 +1793,11 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: start;
-        gap: 20px;
+        gap: 10px;
         color: white;
         font-size: 8px;
         max-width: 100px;
+        text-align: center
         
         
     }
