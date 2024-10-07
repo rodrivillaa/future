@@ -1220,8 +1220,8 @@ body{
     }
 
     .introduccion h3{
-        font-size: 14px;
-        margin: 15px;
+        font-size: 12px;
+        margin: 25px;
     }
     header{
         display: block;
@@ -1351,10 +1351,11 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: start;
-        gap: 20px;
+        gap: 10px;
         color: white;
         font-size: 8px;
         max-width: 100px;
+        text-align: center;
         
         
     }
@@ -1375,7 +1376,7 @@ body{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
         position: relative;
         gap: 0;
-        background-color:#ffffff;
+        background-color:#ffffff71;
         border-radius: 2px;
         text-align: center;
         padding: 10px;
