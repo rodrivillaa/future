@@ -81,33 +81,46 @@ document.addEventListener('click', function(event) {
 
 
 document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+.addEventListener('submit', function(event) {
+event.preventDefault();
 
-   const btn = document.getElementById('button');
-   btn.value = 'Sending...';
+const btn = document.getElementById('button');
+btn.value = 'Sending...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_p4fdnrh';
+const serviceID = 'default_service';
+const templateID = 'template_p4fdnrh';
 
 
    const originalText = btn.innerHTML; // Guardamos el texto original del botón
 
    // Agregamos el spinner y el texto "Enviando..."
-   btn.innerHTML = '<div class="spinner"></div> Enviando...';
+btn.innerHTML = '<div class="spinner"></div> Enviando...';
    btn.disabled = true; // Desactivamos el botón para evitar múltiples envíos
 
-   emailjs.sendForm(serviceID, templateID, this)
+emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
+    btn.value = 'Send Email';
       btn.innerHTML = originalText; // Restauramos el texto original del botón
       btn.disabled = false; // Reactivamos el botón
-      alert('Sent!');
-      location.reload();
+
+
+    Swal.fire({
+        title: "Formulario enviado!",
+        icon: "success",
+        showConfirmButton: true, // Mostrar botón para confirmar
+        allowOutsideClick: false, // Evita cerrar el alert haciendo clic fuera
+        allowEscapeKey: false // Evita cerrar con la tecla Escape
+    }).then((result) => {
+        if (result.isConfirmed) {
+          // Si el usuario cierra el modal, recargamos la página
+        location.reload();
+        }
+    });
+    
     }, (err) => {
         btn.innerHTML = originalText; // Restauramos el texto original del botón
         btn.disabled = false; // Reactivamos el botón
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+    btn.value = 'Send Email';
+    alert(JSON.stringify(err));
     });
 });

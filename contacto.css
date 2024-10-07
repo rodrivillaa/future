@@ -69,11 +69,6 @@ a{
     
 } */
 
-
-body{
-
-}
-
 .banner{
     display: block;
 }
@@ -197,33 +192,33 @@ label {
     font-size: 16px;
     margin-bottom: 5px;
     font-weight: bold;
-  }
+}
 
-  input[type="text"],
+input[type="text"],
 input[type="email"],
 textarea {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+width: 300px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
   resize: vertical; /* Permite que el textarea solo se redimensione verticalmente */
 }
 
 textarea {
     min-height: 100px; /* Establece una altura mínima para el textarea */
-  }
+}
 
-  .submit-container {
+.submit-container {
     display: flex;
     justify-content: flex-end;
-  }
-  .icons{
+}
+.icons{
     margin-top: 100px;
-  }
-  .icon-overlay{
+}
+.icon-overlay{
     max-width: 800px;
     position: absolute;
     top: 50%;
@@ -295,22 +290,7 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  footer{
+footer{
     margin-top: 0px;
     background-color:#8C3E4C;
     height: 220px;
@@ -357,7 +337,7 @@ textarea {
     justify-content: flex-end;
     gap: 10px;
     max-width: 300px;
- 
+
 
 }
 .location h1{
@@ -639,7 +619,7 @@ textarea {
         display: block;
         align-items: center;
         text-decoration: none;
-        font-size: 9px;
+        font-size: 14px;
         margin: 20px;
     
     }
@@ -659,7 +639,7 @@ textarea {
         max-width: 100%;
     }
     .icono-footer{
-        height: 80px;
+        height: 90px;
     
     
     }
@@ -674,12 +654,12 @@ textarea {
         flex-direction: column;
         align-items: center;
         color: white;
-        font-size: 30px;
+        font-size: 70px;
         gap: 20px;
         max-width: 100px;
     }
     .redes h1{
-        font-size: 8px;
+        font-size: 9px;
         text-align: center;
     
     }
@@ -688,7 +668,7 @@ textarea {
         display: flex;
         cursor: pointer;
         gap: 10px;
-        font-size: 10px;
+        font-size: 14px;
     }
     .location{
         display: flex;
@@ -699,7 +679,7 @@ textarea {
     
     }
     .location h1{
-        font-size: 8px;
+        font-size: 9px;
         text-align: center;
         margin-top: 13px;
         color: white;
@@ -723,7 +703,7 @@ textarea {
         justify-content: start;
         gap: 20px;
         color: white;
-        font-size: 8px;
+        font-size: 9px;
         max-width: 100px;
         
         
@@ -767,7 +747,7 @@ textarea {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-90%, -150%);
+        transform: translate(-90%, -100%);
         color: rgb(255, 255, 255);
         text-align: center;
         padding: 0px;
@@ -804,7 +784,7 @@ textarea {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(70%, -100%);
+        transform: translate(70%, -70%);
         color: rgb(255, 255, 255);
         text-align: center;
         padding: 0px;
@@ -1067,7 +1047,7 @@ textarea {
         
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 775px) {
     .form{
         background-color: #222326;
         width: 400px;
@@ -1101,7 +1081,7 @@ textarea {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -130%);
+        transform: translate(-50%, -110%);
         color: rgb(255, 255, 255);
         text-align: center;
         padding: 0px;
@@ -1139,7 +1119,7 @@ textarea {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -10%);
+        transform: translate(-50%, 20%);
         color: rgb(255, 255, 255);
         text-align: center;
         padding: 0px;
@@ -1196,9 +1176,9 @@ textarea {
         font-size: 16px;
         margin-bottom: 5px;
         font-weight: bold;
-      }
+    }
     
-      input[type="text"],
+    input[type="text"],
     input[type="email"],
     textarea {
       width: 200px;
@@ -1213,16 +1193,16 @@ textarea {
     
     textarea {
         min-height: 100px; /* Establece una altura mínima para el textarea */
-      }
+    }
     
-      .submit-container {
+    .submit-container {
         display: flex;
         justify-content: flex-end;
-      }
-      .icons{
+    }
+    .icons{
         margin-top: 100px;
-      }
-      .icon-overlay{
+    }
+    .icon-overlay{
         max-width: 800px;
         position: absolute;
         top: 50%;
@@ -2082,7 +2062,7 @@ textarea {
 
 
   /* Estilo del spinner */
-  .spinner {
+.spinner {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -2091,16 +2071,16 @@ textarea {
     border-top-color: #fff;
     animation: spin 1s ease-in-out infinite;
     margin-right: 8px;
-  }
+}
 
-  @keyframes spin {
+@keyframes spin {
     to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
     }
-  }
+}
 
   /* Estilo del botón para que se vea con la animación */
-  .loading {
+.loading {
     display: flex;
     align-items: center;
-  }
+}

@@ -4,7 +4,7 @@
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-  font-style: normal;
+    font-style: normal;
 }
 .destacados{
     display: none;
@@ -344,7 +344,6 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 130px;
-  
 }
 
 .general{
@@ -494,7 +493,7 @@ body{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-100%, -280%);
+        transform: translate(-90%, -230%);
         color: white;
         text-align: center;
         padding: 0px;
