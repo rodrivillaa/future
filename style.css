@@ -1257,7 +1257,7 @@ body{
         
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 392px) {
 
     header{
         display: block;
@@ -1314,7 +1314,7 @@ body{
         max-width: 800px;
         position: absolute;
         top: 40%;
-        left: 50%;
+        left: 52%;
         transform: translate(-100%, -500%);
         color: white;
         text-align: center;
@@ -1328,7 +1328,7 @@ body{
     .icons{
         max-width: 800px;
         position: absolute;
-        top: 36%;
+        top: 41%;
         left: 40%;
         transform: translate(530%, -1000%);
         color: white;
@@ -1503,7 +1503,7 @@ body{
 }
 
 
-@media screen and (min-width: 390px)and (max-width: 768px) {
+@media screen and (min-width: 393px)and (max-width: 768px) {
     header{
         display: block;
         justify-content: center;
