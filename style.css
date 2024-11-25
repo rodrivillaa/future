@@ -1257,7 +1257,7 @@ body{
         
     }
 }
-@media (max-width: 350px)and (max-width: 401px) {
+@media (max-width: 390px) {
 
     header{
         display: block;
@@ -1313,7 +1313,7 @@ body{
     .text-overlay {
         max-width: 800px;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-100%, -500%);
         color: white;
@@ -1325,11 +1325,11 @@ body{
         font-size: 5px;
     }
 
-    .icon-overlay{
+    .icons{
         max-width: 800px;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 36%;
+        left: 40%;
         transform: translate(530%, -1000%);
         color: white;
         text-align: center;
@@ -1339,36 +1339,8 @@ body{
         font-weight: 500;
         font-size: 18px;
     }
-    .icon-overlay2{
-        max-width: 800px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(720%, -1000%);
-        color: white;
-        text-align: center;
-        padding: 0px;
-        border-radius: 5px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-    }
+
     
-    .icon-overlay3{
-        max-width: 800px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(780%, -1000%);
-        color: white;
-        text-align: center;
-        padding: 0px;
-        border-radius: 5px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-    
-    }
 
     .banner{
         height: auto;
