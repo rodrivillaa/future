@@ -1757,7 +1757,7 @@ footer{
     .text-overlay{
         max-width: auto;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -90%);
         color: rgb(255, 255, 255);
@@ -1794,7 +1794,7 @@ footer{
         box-shadow: 4px 4px 10px rgba(44, 44, 44, 0.685);
         max-width: 750px;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, 24%);
         color: rgb(255, 255, 255);
