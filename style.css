@@ -987,7 +987,7 @@ body{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
     header{
         display: block;
@@ -1043,7 +1043,7 @@ body{
     .text-overlay {
         max-width: 800px;
         position: absolute;
-        top: 50%;
+        top: 0%;
         left: 50%;
         transform: translate(-100%, -600%);
         color: white;
