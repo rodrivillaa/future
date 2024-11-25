@@ -281,7 +281,7 @@ body{
 }
 
 .introduccion h1{
-    font-weight: 600px;
+    font-weight: 800px;
 }
 
 
@@ -418,12 +418,14 @@ body{
         background-position: -16px 1700px;
     }
     .introduccion h1{
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 600;
     }
 
     .introduccion h3{
-        font-size: 14px;
+        font-size: 16px;
         margin: 15px;
+        font-weight: 400;
     }
     header{
         display: block;
