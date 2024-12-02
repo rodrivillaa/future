@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
-window.addEventListener('resize', activateSwiper);
+window.addEventListener('resize',activateSwiper);
 activateSwiper();
 
 // Selecciona todos los botones de info
