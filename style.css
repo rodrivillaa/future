@@ -483,6 +483,10 @@ body{
 
 @media (max-width: 1400px) {
 
+    nav ul li{
+        font-size: 14px;
+    }
+
     .image-container {
         position: relative;
         display: inline-block;
