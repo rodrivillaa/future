@@ -1045,18 +1045,18 @@ body{
     }
 
     .text-overlay {
-        max-width: 800px;
+        max-width: 1100px;
         position: absolute;
-        top: 0%;
+        top: 50%;
         left: 50%;
-        transform: translate(-100%, -600%);
+        transform: translate(-90%, -400%);
         color: white;
         text-align: center;
         padding: 0px;
         border-radius: 5px;
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .icon-overlay{
